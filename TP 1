@@ -1,0 +1,71 @@
+1)    Console.WriteLine("Ingrese el nombre:");
+			var nombre = Console.ReadLine();
+			Console.WriteLine("Ingrese la apellido:");
+			var apellido = Console.ReadLine();
+
+			Console.WriteLine(nombre+ " " + apellido);
+			Console.ReadKey();
+
+	      2) Console.WriteLine("Ingrese el nombre:");
+			var nombre2 = Console.ReadLine();
+			Console.WriteLine("Ingrese la edad:");
+			var edad = int.Parse( Console.ReadLine());
+			if(edad>=18)
+				Console.WriteLine("Mayor de edad");
+			else
+				Console.WriteLine("Menor de edad");
+			Console.ReadKey();
+			
+  3)       int num, suma = 0, n, divisor,cont = 0;
+
+                       Console.Write("Número:");
+                       num = Int32.Parse(Console.ReadLine());
+
+                       for (int i = 0; i < num; i++)
+                       suma = suma + i;
+
+                       Console.Write("La suma de los números que anteceden a el {0} es {1}\n\n", num, suma);
+
+
+  4)   Console.WriteLine("Ingrese el primer numero:");
+			var numero1 = int.Parse(Console.ReadLine());
+			Console.WriteLine("Ingrese la segundo numero:");
+			var numero2 = int.Parse(Console.ReadLine());
+			for (int i = numero1; i >0; i--)
+			{
+			   if (numero1 % i == 0 && numero2 % i == 0)
+				{
+					Console.WriteLine("El MCD es: {0}",i);
+					i = 0;
+				}
+			}
+			Console.ReadKey();
+
+5)
+           int num,suma,elementos;
+          float media
+  Console.WriteLine("Introduzca un numero: ");
+       num=n.nextInt();
+       
+       suma=0;
+       elementos=0;
+       
+       while(num>=0){//Nos interesan los positivos y el cero.
+           
+           suma+=num;
+           elementos++;
+           
+            Console.WriteLine("Introduzca otro numero: ");
+           num=n.nextInt();
+       }
+       if(elementos==0){//Daria un error de division por cero.
+           
+            Console.WriteLine("Imposible hacer la media");
+           
+       }
+       else{
+           media=(float)suma/elementos;
+            Console.WriteLine("La media es de: "+media);
+       }
+    }
+
